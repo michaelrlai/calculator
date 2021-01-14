@@ -1,0 +1,105 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.head {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    color: white;
+    padding: 22px 0;
+    text-align: center;
+    background-color: rgb(75, 75, 75);
+    font-size: 20px;
+}
+
+.item1 {
+    grid-area: one;   
+}
+.item2 {
+    grid-area: two;   
+}
+.item3 {
+    grid-area: three;
+}
+.item4 {
+    grid-area: four;   
+}
+.item5 {
+    grid-area: five;
+}
+.item6 {
+    grid-area: six;
+}
+.item7 {
+    grid-area: seven;
+}
+.item8 {
+    grid-area: eight;
+}
+.item9 {
+    grid-area: nine;
+}
+.item10 {
+    grid-area: zero;
+    text-align: left;
+    padding-left: 32px;
+}
+.item11 {
+    grid-area: display;
+    background-color: rgb(36, 36, 36);
+    font-size: 30px;
+}
+.item12 {
+    grid-area: clear;
+    background-color: rgb(199, 199, 199);
+    color: black;
+}
+.item13 {
+    grid-area: divide;
+    background-color: rgb(199, 199, 199);
+    color: black;
+}
+.item14 {
+    grid-area: multiply;
+    background-color: rgb(199, 199, 199);
+    color: black;
+}
+.item15 {
+    grid-area: subtract;
+    background-color: rgb(211, 146, 26);
+}
+.item16 {
+    grid-area: add;
+    background-color: rgb(211, 146, 26);
+}
+.item17 {
+    grid-area: equals;
+    background-color: rgb(211, 146, 26);
+}
+.item18 {
+    grid-area: decimal;
+}
+
+.calculator-container {
+    height: 480px;
+    width: 320px;
+    background-color: rgb(218, 218, 218);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        'display display display display'
+        'clear divide multiply subtract'
+        'seven eight nine add'
+        'four five six add'
+        'one two three equals'
+        'zero zero decimal equals';
+    grid-gap: 3px;
+}
