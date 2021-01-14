@@ -1,8 +1,10 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(25, 25, 25);
 }
 
 .head {
+    color: grey;
     text-align: center;
 }
 
@@ -52,23 +54,25 @@ body {
     padding-left: 32px;
 }
 .item11 {
+    text-align: right;
     grid-area: display;
     background-color: rgb(36, 36, 36);
-    font-size: 30px;
+    font-size: 50px;
+    padding: 8px 23px 0px 0px;
 }
 .item12 {
     grid-area: clear;
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(175, 175, 175);
     color: black;
 }
 .item13 {
     grid-area: divide;
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(175, 175, 175);
     color: black;
 }
 .item14 {
     grid-area: multiply;
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(175, 175, 175);
     color: black;
 }
 .item15 {
@@ -90,7 +94,7 @@ body {
 .calculator-container {
     height: 480px;
     width: 320px;
-    background-color: rgb(218, 218, 218);
+    background-color: rgb(200, 200, 200);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);

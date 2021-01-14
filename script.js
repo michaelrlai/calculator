@@ -1,5 +1,3 @@
-// document.body.style.backgroundColor = 'rgb(30, 30, 30)';
-
 function add(a, b) {
     return a + b;
 }
@@ -30,6 +28,23 @@ function operate(operator, num1, num2) {
     return answer;
 }
 
-let calculate = operate('/', -5, -5)
+function works() {
+    displayOnScreen.textContent = '1';
+}
 
-console.log(calculate);
+function works2() {
+    displayOnScreen.textContent = '2';
+}
+
+//let calculate = operate('/', -5, -5);
+
+let displayOnScreen = document.querySelector('#display');
+displayOnScreen.textContent = '0';
+
+let oneButton = document.querySelector('#one');
+oneButton.addEventListener('click', works);
+
+let twoButton = document.querySelector('#two');
+twoButton.addEventListener('click', works2);
+
+
