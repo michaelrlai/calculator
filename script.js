@@ -28,23 +28,36 @@ function operate(operator, num1, num2) {
     return answer;
 }
 
-function works() {
-    displayOnScreen.textContent = '1';
+function input() {
+    this.classList.add('highlight');
+
+    if (value === 0) {
+        value = '';
+    }
+    if (this.id === 'clear') {
+        value = 0;
+    } else {
+        value += this.textContent;
+    }
+    displaying.textContent = value;
 }
 
-function works2() {
-    displayOnScreen.textContent = '2';
+function removeHighlight (e) {
+
+    this.classList.remove('highlight');
 }
 
-//let calculate = operate('/', -5, -5);
-
-let displayOnScreen = document.querySelector('#display');
-displayOnScreen.textContent = '0';
-
-let oneButton = document.querySelector('#one');
-oneButton.addEventListener('click', works);
-
-let twoButton = document.querySelector('#two');
-twoButton.addEventListener('click', works2);
 
 
+let value = 0;
+let displaying = document.querySelector('#display');
+displaying.textContent = value;
+
+let button = document.querySelectorAll('.button');
+
+for (let i = 0; i < button.length - 1; i++) {
+    button[i].addEventListener('mousedown', input);
+    button[i].addEventListener('mouseup', removeHighlight);
+}
+
+console.log(button);
