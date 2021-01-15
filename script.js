@@ -54,19 +54,29 @@ function input() {
         value = '0';
        // haveFirst = 0;
     } else if (this.id === 'divide' || this.id === 'multiply' || this.id === 'subtract' || this.id === 'add') {
-        operator = this.id;
-        num1 = value;
-        num2 = '';
-        clearNext = 1;
-        consecEquals = 0;
+        if (num1 !== '' && num2 === '') {
+            num2 = value;
+            answer = operate (operator, num1, num2);
+            value = answer;
+            num1 = answer;
+            num2 = '';
+            clearAfterEquals = 1;
+            consecEquals = 1;
+            operator = this.id;
+        } else {
+            operator = this.id;
+            num1 = value;
+            num2 = '';
+            clearNext = 1;
+            consecEquals = 0;
+        }
+
       //  haveFirst = 1;
     } else if (this.id === 'equals') {
         if (consecEquals !== 1 && num1 !== '') {
             num2 = value;
         }
         if (num1 === '' && num2 === ''){
-            console.log('YES');
-            
         } else {
             answer = operate (operator, num1, num2);
             value = answer;
