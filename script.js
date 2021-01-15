@@ -28,7 +28,11 @@ function operate(operator, num1, num2) {
         answer = divide(num1, num2);
     }
     console.log('answer: ' + answer);
-    return Math.round(answer * 100000) / 100000;
+    if (answer === Infinity || isNaN(answer) ) {
+        return 'oops';
+    } else {
+        return Math.round(answer * 100000) / 100000;
+    }
 }
 
 function input() {
