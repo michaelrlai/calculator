@@ -24,7 +24,7 @@ body {
     text-align: center;
     background-color: rgb(75, 75, 75);
     font-size: 20px;
-    transition: all 0.07s;
+    transition: all 0.01s;
 }
 
 .highlight {
