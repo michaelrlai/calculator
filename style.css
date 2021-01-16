@@ -21,11 +21,12 @@ body {
 
 .button {
     color: white;
-    padding: 22px 0;
+    padding: 25px 0;
     text-align: center;
     background-color: rgb(75, 75, 75);
     font-size: 20px;
     transition: all 0.01s;
+    border-radius: 2px;
 }
 
 .highlight {
@@ -69,35 +70,37 @@ body {
     text-align: right;
     grid-area: display;
     background-color: rgb(36, 36, 36);
-    font-size: 50px;
-    padding: 8px 23px 0px 0px;
+    font-size: 57px;
+    padding: 3px 22px 0px 0px;
+    border-radius: 2px;
 }
 .item12 {
     grid-area: clear;
-    background-color: rgb(175, 175, 175);
-    color: black;
+    background-color: rgb(60, 167, 255);
+    box-shadow: 0px 0px 5px rgba(60, 167, 255, 0.8);
+
 }
 .item13 {
     grid-area: divide;
-    background-color: rgb(175, 175, 175);
-    color: black;
+    background-color: rgb(150, 150, 150);
 }
 .item14 {
     grid-area: multiply;
-    background-color: rgb(175, 175, 175);
-    color: black;
+    background-color: rgb(150, 150, 150);
 }
 .item15 {
     grid-area: subtract;
-    background-color: rgb(211, 146, 26);
+    background-color: rgb(150, 150, 150);
 }
 .item16 {
     grid-area: add;
     background-color: rgb(211, 146, 26);
+    box-shadow: 0px 0px 5px rgba(211, 146, 26, 0.8);
 }
 .item17 {
     grid-area: equals;
     background-color: rgb(211, 146, 26);
+    box-shadow: 0px 0px 5px rgba(211, 146, 26, 0.8);
 }
 .item18 {
     grid-area: decimal;
@@ -106,7 +109,7 @@ body {
 .calculator-container {
     height: 480px;
     width: 320px;
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(25, 25, 25);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -117,5 +120,6 @@ body {
         'four five six add'
         'one two three equals'
         'zero zero decimal equals';
-    grid-gap: 3px;
+    grid-gap: 1px;
+    box-shadow: 5px 5px 10px rgb(10, 10, 10)
 }
