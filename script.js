@@ -35,9 +35,11 @@ function operate(operator, num1, num2) {
     }
 }
 
-function input() {
+
+function input(key) {
   //  this.classList.add('highlight'); // Adds highlight to button press
 
+  
     if ((value === '0' || value === 0) 
             && this.id !== 'divide' 
             && this.id !== 'multiply' 
@@ -104,6 +106,16 @@ function input() {
         consecEquals = 0;
         value += this.textContent;
         }
+
+    } else if (this.id === 'delete') {
+        if (clearAfterEquals === 0) {
+            value = value.slice(0, -1);
+        }
+        if (value === '')
+        {
+            value = 0;
+        }
+
     } else {
         if (clearNext === 1) {
             value = '';
@@ -114,12 +126,13 @@ function input() {
             clearAfterEquals = 0;
         }
         consecEquals = 0;
+        
         value += this.textContent;
     }
 
     displaying.textContent = value;
 
-    console.log('num1: ' + num1, 'num2: ' + num2, 'operator:' + operator);
+    console.log('value: ' + value,'num1: ' + num1, 'num2: ' + num2, 'operator: ' + operator);
 }
 
 function removeHighlight (e) {
@@ -146,5 +159,4 @@ for (let i = 0; i < button.length; i++) {
     button[i].addEventListener('mousedown', input);
  //   button[i].addEventListener('mouseup', removeHighlight); // Removes highlight from button press
 }
-
 

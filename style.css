@@ -91,6 +91,8 @@ body {
 .item15 {
     grid-area: subtract;
     background-color: rgb(150, 150, 150);
+    background-color: rgb(211, 146, 26);
+    box-shadow: 0px 0px 5px rgba(211, 146, 26, 0.8);
 }
 .item16 {
     grid-area: add;
@@ -105,6 +107,11 @@ body {
 .item18 {
     grid-area: decimal;
 }
+.item19 {
+    grid-area: delete;
+    background-color: rgb(60, 167, 255);
+    box-shadow: 0px 0px 5px rgba(60, 167, 255, 0.8);
+}
 
 .calculator-container {
     height: 480px;
@@ -115,8 +122,8 @@ body {
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
         'display display display display'
-        'clear divide multiply subtract'
-        'seven eight nine add'
+        'clear delete divide multiply'
+        'seven eight nine subtract'
         'four five six add'
         'one two three equals'
         'zero zero decimal equals';
