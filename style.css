@@ -29,6 +29,10 @@ body {
     border-radius: 2px;
 }
 
+.button:hover {
+    background-color: rgb(88, 88, 88);
+}
+
 .highlight {
     opacity: 50%;
 }
@@ -78,15 +82,23 @@ body {
     grid-area: clear;
     background-color: rgb(60, 167, 255);
     box-shadow: 0px 0px 5px rgba(60, 167, 255, 0.8);
-
+}
+.item12:hover {
+    background-color: rgb(94, 182, 255);
 }
 .item13 {
     grid-area: divide;
     background-color: rgb(150, 150, 150);
 }
+.item13:hover {
+    background-color: rgb(170, 170, 170);
+}
 .item14 {
     grid-area: multiply;
     background-color: rgb(150, 150, 150);
+}
+.item14:hover {
+    background-color: rgb(170, 170, 170);
 }
 .item15 {
     grid-area: subtract;
@@ -94,15 +106,24 @@ body {
     background-color: rgb(211, 146, 26);
     box-shadow: 0px 0px 5px rgba(211, 146, 26, 0.8);
 }
+.item15:hover {
+    background-color: rgb(214, 163, 69);
+}
 .item16 {
     grid-area: add;
     background-color: rgb(211, 146, 26);
     box-shadow: 0px 0px 5px rgba(211, 146, 26, 0.8);
 }
+.item16:hover {
+    background-color: rgb(214, 163, 69);
+}
 .item17 {
     grid-area: equals;
     background-color: rgb(211, 146, 26);
-    box-shadow: 0px 0px 5px rgba(211, 146, 26, 0.8);
+    box-shadow: 0px 0px 5px rgb(211, 146, 26);
+}
+.item17:hover {
+    background-color: rgb(214, 163, 69);
 }
 .item18 {
     grid-area: decimal;
@@ -111,6 +132,9 @@ body {
     grid-area: delete;
     background-color: rgb(60, 167, 255);
     box-shadow: 0px 0px 5px rgba(60, 167, 255, 0.8);
+}
+.item19:hover {
+    background-color: rgb(94, 182, 255);
 }
 
 .calculator-container {
